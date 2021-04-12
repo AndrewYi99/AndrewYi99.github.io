@@ -6,7 +6,16 @@
     <description>Recent content on AndrewYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Apr 2021 12:15:10 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 21:35:22 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitee图床</title>
+      <link>https://andrewyi99.github.io/post/gitee%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Mon, 12 Apr 2021 21:35:22 +0800</pubDate>
+      
+      <guid>https://andrewyi99.github.io/post/gitee%E5%9B%BE%E5%BA%8A/</guid>
+      <description>gitee + picogo搭建图床 为什么选择用gitee： 1.因为没钱🐵2333 2.因为没有域名(七牛云等图床就只能使用一个月) 3.因为没有备案(很麻烦，现阶段还不想弄) 踩坑： 1. 关于版本的选择 ​ 不知道是不是因为</description>
+    </item>
+    
     <item>
       <title>搭建博客</title>
       <link>https://andrewyi99.github.io/post/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
