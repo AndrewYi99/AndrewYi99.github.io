@@ -6,7 +6,16 @@
     <description>Recent content on AndrewYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Apr 2021 21:58:28 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Apr 2021 12:15:10 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建博客</title>
+      <link>https://andrewyi99.github.io/post/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 11 Apr 2021 12:15:10 +0800</pubDate>
+      
+      <guid>https://andrewyi99.github.io/post/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>搭建我自己的hugo博客 1. 安装并配置hugo环境 (1).所需环境 go hugo windows 10 git github账号 gitee账号 picgo (2).下载相应文件 先下载好go以及hugo的安装文件。 图片 安装go，会自动配置环境变量。 解压</description>
+    </item>
+    
     <item>
       <title>Firstblog</title>
       <link>https://andrewyi99.github.io/post/firstblog/</link>
