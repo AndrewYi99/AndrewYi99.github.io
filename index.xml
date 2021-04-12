@@ -13,7 +13,7 @@
       <pubDate>Sun, 11 Apr 2021 12:15:10 +0800</pubDate>
       
       <guid>https://andrewyi99.github.io/post/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>搭建我自己的hugo博客 1. 安装并配置hugo环境 (1).所需环境 go hugo windows 10 git github账号 gitee账号 picgo (2).下载相应文件 先下载好go以及hugo的安装文件。 图片 安装go，会自动配置环境变量。 解压</description>
+      <description>搭建我自己的hugo博客 1. 安装并配置hugo环境 (1).所需环境 Name Version go 1.16.3 windows/amd64 hugo v0.82.0-9D960784 windows/amd64 windows 10 git github账号 gitee账号 pigo (2).下载相应文件 先下载好go以及hugo的安装文件。 安装go，会自动配置环境变</description>
     </item>
     
     <item>
