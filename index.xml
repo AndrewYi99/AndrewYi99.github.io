@@ -6,7 +6,34 @@
     <description>Recent content on AndrewYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Apr 2021 21:35:22 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Apr 2021 22:24:29 +0800</lastBuildDate><atom:link href="https://andrewyi99.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计组_chapter_1</title>
+      <link>https://andrewyi99.github.io/post/%E8%AE%A1%E7%BB%84_chapter_1/</link>
+      <pubDate>Sun, 18 Apr 2021 22:24:29 +0800</pubDate>
+      
+      <guid>https://andrewyi99.github.io/post/%E8%AE%A1%E7%BB%84_chapter_1/</guid>
+      <description>1.考纲 计算机系统层次结构 计算机系统的基本组成 计算机硬件的基本组成 计算机软件的分类 计算机的工作过程 计算机的性能指标 吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 MIPS、MFLOPS、</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu_命令</title>
+      <link>https://andrewyi99.github.io/post/ubuntu_%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Wed, 14 Apr 2021 21:07:28 +0800</pubDate>
+      
+      <guid>https://andrewyi99.github.io/post/ubuntu_%E5%91%BD%E4%BB%A4/</guid>
+      <description>1.基础命令 关机相关命令 sync：将数据由内存同步到硬盘中 shutdown 关机指令 reboot：重启 等同于 shutdown -r now halt关闭系统:等同于shutdown -h now 以及poweroff 目录结构 /bin：存储常用指令 /boo</description>
+    </item>
+    
+    <item>
+      <title>Install_vm_Ubuntu</title>
+      <link>https://andrewyi99.github.io/post/install_vm_ubuntu/</link>
+      <pubDate>Tue, 13 Apr 2021 10:16:34 +0800</pubDate>
+      
+      <guid>https://andrewyi99.github.io/post/install_vm_ubuntu/</guid>
+      <description>安装Unbuntu虚拟机 1.环境准备 Name Version win10 20h2 VMware 15.5 pro Ubuntu 2.安装遇到的问题 分区界面显示不完全 原因：因为使用的中文😒 解决办法:使用English 如何手动分区: 对于Linux的分区，我是一点都不懂。 搜索了很多</description>
+    </item>
+    
     <item>
       <title>Gitee图床</title>
       <link>https://andrewyi99.github.io/post/gitee%E5%9B%BE%E5%BA%8A/</link>

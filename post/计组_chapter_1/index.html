@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.82.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn@1/images/favicons/dsrca/favicon.ico" />
+
+
+
+<title>计组_chapter_1 - AndrewYI&#39;s Blog</title>
+
+
+<meta name="author" content="AndrewYi" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+
+<meta property="og:title" content="计组_chapter_1" />
+<meta name="twitter:title" content="计组_chapter_1" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andrewyi99.github.io/post/%E8%AE%A1%E7%BB%84_chapter_1/" /><meta property="og:description" content="1.考纲 计算机系统层次结构 计算机系统的基本组成 计算机硬件的基本组成 计算机软件的分类 计算机的工作过程 计算机的性能指标 吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 MIPS、MFLOPS、" />
+<meta name="twitter:description" content="1.考纲 计算机系统层次结构 计算机系统的基本组成 计算机硬件的基本组成 计算机软件的分类 计算机的工作过程 计算机的性能指标 吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 MIPS、MFLOPS、" /><meta property="og:image" content="https://andrewyi99.github.io/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://andrewyi99.github.io/img/og.png" /><meta property="article:published_time" content="2021-04-18T22:24:29+08:00" /><meta property="article:modified_time" content="2021-04-18T22:24:29+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="https://andrewyi99.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://andrewyi99.github.io/">AndrewYI&#39;s Blog</a>
+            
+            <span class="title-sub">A minimal Hugo blog.</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://andrewyi99.github.io/post/%E8%AE%A1%E7%BB%84_chapter_1/">计组_chapter_1</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-04-18</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;3402 字</span>
+<span><i class="iconfont icon-time-sharp"></i>&nbsp;7 分钟</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;无标签</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="1考纲">1.考纲</h1>
+<ul>
+<li>计算机系统层次结构
+<ul>
+<li>计算机系统的基本组成</li>
+<li>计算机硬件的基本组成</li>
+<li>计算机软件的分类</li>
+<li>计算机的工作过程</li>
+</ul>
+</li>
+<li>计算机的性能指标
+<ul>
+<li>吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间</li>
+<li>MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS</li>
+</ul>
+</li>
+</ul>
+<h1 id="2计算机系统的层次结构">2.计算机系统的层次结构</h1>
+<h2 id="21-计算机系统的组成">2.1 计算机系统的组成</h2>
+<p>硬件：有形的物理设备</p>
+<p>软件：在硬件上运行的程序和相关的数据文档</p>
+<p>冯诺依曼机</p>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419102753.png" alt="image-20210419102753022" />
+</p>
+<p>现代计算机：</p>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419103138.png" alt="image-20210419103138744" />
+</p>
+<p>简化后的结构：</p>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419103238.png" alt="image-20210419103238794" />
+</p>
+<p>知识回顾：</p>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419103524.png" alt="image-20210419103524857" />
+</p>
+<h3 id="1主存储器的结构">1.主存储器的结构</h3>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419103915.png" alt="image-20210419103914933" />
+</p>
+<ul>
+<li>
+<p>主存储器组成</p>
+<ul>
+<li>
+<p><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419104008.png" alt="image-20210419104008080" />
+</p>
+</li>
+<li>
+<p>MAR：地址寄存器，用于存放访存地址。</p>
+</li>
+<li>
+<p>MDR：数据寄存器，用户暂存从存储器中读写的数据。</p>
+</li>
+<li>
+<p>注意：现代计算机是围绕<font color='red'>存储</font>为中心，但是MAR和MDR一般集成在CPU中</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2运算器的结构">2.运算器的结构</h3>
+<p>​	<img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419142200.png" alt="image-20210419142200047" />
+</p>
+<ul>
+<li>运算器：用于实现算术运算（加减乘除），逻辑运算（如：与或非）
+<ul>
+<li>ACC（Accumulator ）：累加器，用于存放操作数，或运算结果。</li>
+<li>MQ（Multiple-Quotient Register）：乘商寄存器，在乘除运算时，用于存放操作数，或运算结果。</li>
+<li>X：通用的操作数寄存器，存放操作数</li>
+<li><strong>ALU（Arithmetic and Logic Unit）</strong>：算术逻辑单元，通过内部复杂的电路实现算术运算、逻辑运算。</li>
+</ul>
+</li>
+</ul>
+<p><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419142901.png" alt="image-20210419142901427" />
+</p>
+<h3 id="3-控制器的结构">3. 控制器的结构</h3>
+<p><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419142948.png" alt="image-20210419142948287" />
+</p>
+<ul>
+<li><strong>CU（Control Unit）</strong>：控制单元，分析指令，给出控制信号</li>
+<li>IR（Instruction Register）:指令寄存器，存放当前执行的指令。</li>
+<li>PC（Program Counter）：程序计数器，存放下一条指令地址，有自动加1功能。</li>
+</ul>
+<p>完成一条指令的步骤：</p>
+<ul>
+<li>取指令 PC（根据PC中的地址来取，存放到IR中）</li>
+<li>分析指令  IR</li>
+<li>执行指令 CU</li>
+</ul>
+<h2 id="22计算机的指令工作过程">2.2计算机的指令工作过程</h2>
+<ul>
+<li>
+<p>操作码与操作性质：</p>
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419145844.png" alt="image-20210419145844188" />
+</li>
+</ul>
+</li>
+<li>
+<p>高级语言代码：</p>
+<ul>
+<li>
+<pre><code class="language-c">int a = 2,b = 3,c = 1,y = 0;
+void main(){
+    y = a*b+c;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>编译装入主存  - &gt; 机器语言</p>
+</li>
+</ul>
+<p><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419143539.png" alt="image-20210419143539147" />
+</p>
+<ul>
+<li>存储单元的字长为16bit(位)</li>
+<li>计算机结构：</li>
+</ul>
+<p><img src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419143824.png" alt="image-20210419143823942" style="zoom:150%;" /></p>
+<ul>
+<li>
+<p>指令具体执行过程：</p>
+</li>
+<li>
+<p><img src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419144356.png" alt="image-20210419144356305" style="zoom:150%;" /></p>
+<ul>
+<li>程序执行前，首先将程序的起始地址存放在PC中，取指令时，将PC的内容作为地址访问主存。</li>
+<li>初始状态:(PC) = 0，程序寄存器指向第一条指令的存储地址。</li>
+<li>#1:(PC)-&gt;MAR，使得（MAR） = 0 ，地址寄存器中的地址为0.控制器向主存储器指明了接下来要访问0号地址对应的数据，且为读操作。</li>
+<li>#3. M(MAR)-&gt;MDR:将M[MAR]中的内容存放到MDR中。使得（MDR） = <strong>000001 0000000101</strong></li>
+<li>#4.将（MDR）-&gt;IR （指令寄存器）：导致(IR) = <strong>000001 0000000101</strong></li>
+<li>#5.OP(IR)-&gt;CU:指令的操作码，送到CU进行分析，得知为“<strong>取数</strong>”指令</li>
+<li>#6.Ad(IR)-&gt;MAR：指令的<strong>地址码</strong>=0000000101送到MAR，导致(MAR)=5,  5号存储单元所对应的原始数据为a= 2</li>
+<li>#8.M(MAR)-&gt;MDR,故此时(MDR) = <strong>0000000000000010</strong>=2</li>
+<li>#9. (MDR)-&gt;ACC，使得(ACC) =  <strong>0000000000000010</strong>=2。此时一个变量的值已经放在ACC中了。
+<ul>
+<li>取指令(#1 - #4) <strong>该动作完成后，PC自动加1</strong></li>
+<li>分析指令(#5)</li>
+<li>执行取数指令(#6-#9)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>以上动作完成后，此时：(PC)=1,(ACC) = 2</p>
+<ul>
+<li><img src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419151739.png" alt="image-20210419151738968" style="zoom:150%;" /></li>
+<li>#1.(PC)-&gt;MAR,（MAR） = 1</li>
+<li>#3.M（MAR）-&gt;MDR, <strong>(MDR) = 00100 0000000110</strong></li>
+<li>#4.(MDR)-&gt;IR,<strong>(IR) = 00100 0000000110</strong></li>
+<li>#5.OP(IR)-&gt;CU,分析操作码为<strong>乘法指令</strong>。</li>
+<li>#6.Ad(IR)-&gt;MAR:指令的地址码:<strong>0000000000000011</strong>,送到MAR,使得(MAR) = 6,6号存储单元对应的原始数据为b = 3</li>
+<li>#8.M(MAR)-&gt;MDR,(MDR) = 0000000000000011 = 3.</li>
+<li>#9.（MDR）-&gt;MQ,使得(MQ) =  0000000000000011 = 3</li>
+<li>#10. (ACC) - &gt;x,导致(x) = 2</li>
+<li>#11.(MQ)*(x)-&gt;ACC,由ALU实现乘法计算，导致（ACC） = 6，若乘积太大需要MQ辅助存储。
+<ul>
+<li>取指令(#1 - #4) <strong>该动作完成后，PC自动加1</strong></li>
+<li>分析指令(#5)</li>
+<li>执行乘法指令(#6-#11)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>以上动作完成后：（PC） = 2，（ACC） = 6</p>
+<ul>
+<li><img src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419154609.png" alt="image-20210419154609713" style="zoom:150%;" /></li>
+<li>#1： （PC）-&gt;MAR,(MAR) = 2</li>
+<li>#3: M(MAR)-&gt;MDR,(MDR) = 000011 0000000111</li>
+<li>#4:(MDR)-&gt;IR,(IR) = 000011  0000000111</li>
+<li>#5:OP(IR)-&gt;CU，指令的<strong>操作码</strong>送到CU，CU分析后为加法指令。</li>
+<li>#6：Ad(IR)-&gt;MAR,指令的<strong>地址码</strong>送到MAR，(MAR) = 7.</li>
+<li>#8:M(MAR)-&gt;MDR,导致(MDR) = 0000000000000001 = 1</li>
+<li>#9:（MDR）-&gt;x,导致(x) -&gt; 0000000000000001 = 1</li>
+<li>#10:(ACC)+(x) -&gt;ACC，导致(ACC)=7，由ALU实现加法运算。
+<ul>
+<li>取指令(#1 - #4) <strong>该动作完成后，PC自动加1</strong></li>
+<li>分析指令(#5)</li>
+<li>执行乘法指令(#6-#10)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>以上动作完成后，（PC）=3，执行后，（ACC）=7</p>
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419162027.png" alt="image-20210419162027668" />
+</li>
+<li>#1：(PC)-&gt;MAR,(MAR) = 3</li>
+<li>#3:M(MAR)-&gt;MDR,(MDR) = 000010 0000001000</li>
+<li>#4:M(MDR)-&gt;IR,（IR） = 000010 0000001000</li>
+<li>#5:OP(IR)-&gt;CU,CU分析后，得知为存数指令。</li>
+<li>#6:Ad(IR)-&gt;MAR,(MAR) = 0000001000 = 8,地址单元为8.</li>
+<li>#7:（ACC）-&gt;MDR,(MDR) = 7</li>
+<li>#9:(MDR)-&gt;MAR  (地址为8的存储单元)，(MAR) = 7,y = 7.</li>
+</ul>
+</li>
+<li>
+<p>经过以上动作，(PC)=4</p>
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419163252.png" alt="image-20210419163252086" />
+</li>
+<li>#1:(PC)-&gt;MAR,(MAR) = 4</li>
+<li>#3:(MAR)-&gt;MDR,(MDR) = 000110 0000000000</li>
+<li>#4:(MDR)-&gt;IR,(IR) = 000110 0000000000</li>
+<li>#5:OP(IR) -&gt;CU,分析操作数为停机指令</li>
+<li>(到此执行结束)</li>
+</ul>
+</li>
+<li>
+<p>指令的执行过程：</p>
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419163819.png" alt="image-20210419163819844" />
+</li>
+</ul>
+</li>
+<li>
+<p>本章知识点：</p>
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419164034.png" alt="image-20210419164034640" />
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="23-计算机系统层次">2.3 计算机系统层次</h2>
+<ul>
+<li>直接执行机器语言的实际机器M1
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419172333.png" alt="实际机器" />
+</li>
+</ul>
+</li>
+<li>具有翻译功能的汇编程序的计算机M2以及M１
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419172621.png" alt="具有两级层次结构的计算机系统" />
+</li>
+</ul>
+</li>
+<li>具有三级层次结构的计算机系统
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419173630.png" alt="image-20210419173630660" />
+</li>
+</ul>
+</li>
+<li>四级：
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419174328.png" alt="" />
+</li>
+</ul>
+</li>
+<li>多级层次结构的计算机系统：
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419174419.png" alt="" />
+</li>
+</ul>
+</li>
+<li>三种级别的语言：
+<ul>
+<li><img src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419174608.png" alt="image-20210419174608010" style="zoom:50%;" /></li>
+<li>编译程序：将高级语言编写的源程序全部语句一次全部翻译成机器语言程序。而后再执行机器语言程序。（只需要翻译一次）</li>
+<li>解释程序：将源程序的一条语句翻译成对应的机器语言的语句，并<font color='orange'>立即执行</font>。紧接着再翻译下一句。（每次执行都要翻译）</li>
+</ul>
+</li>
+<li>本节重点：
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419180027.png" alt="image-20210419180027040" />
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="24-存储器的性能指标">2.4 存储器的性能指标</h2>
+<h4 id="1机器字长">(1).机器字长</h4>
+<ul>
+<li>指的是计算机进行一次<font color='purple'>整数运算</font>（定点整数）所能处理的二进制数据的<strong>位数</strong>。</li>
+<li>通常与CPU的<font color='cyan'>寄存器的位数</font>，加法器有关。</li>
+<li>机器字长一般等于内部寄存器的大小，字长越长，数的表示范围越大，计算精度越高。</li>
+<li>计算机字长通常选定为字节(8 bit)的<font color='red'>整数倍</font>。</li>
+</ul>
+<h4 id="2数据通路带宽">(2).数据通路带宽</h4>
+<ul>
+<li>指数据总线一次所能<font color='red'>并行</font>传送<font color='orange'>信息的位数</font>。</li>
+<li>此处为<strong>外部数据总线的宽度</strong>与<strong>内部的数据总线的宽度</strong>（内部寄存器的大小）有可能不同。</li>
+<li>注：各个子系统通过数据总线连接形成的数据传送路径称为<font color='cornflowerblue'>数据通路</font>。</li>
+</ul>
+<h4 id="3主存容量总容量">(3).主存容量（总容量）</h4>
+<ul>
+<li>总容量 = 存储单元的个数*<font color='red'>存储字长</font> bit （ 1Byte= 8 bit）</li>
+<li>总容量 = 存储单元的个数*<font color='red'>存储字长</font>/8 Byte</li>
+<li>例子：MAR为32位，MDR为8位。
+<ul>
+<li>则总容量为:2^32 * 8bit = 2^2 * 2^30 B = 4 GB</li>
+<li>1 b = 1bit,1 B = 8 bit , 1 K = 1024 = 2^10 ,1 M = 2^20 ,1 G = 2^30</li>
+</ul>
+</li>
+</ul>
+<h4 id="4运算速度">(4).运算速度</h4>
+<h5 id="-吞吐量和响应时间">① 吞吐量和响应时间</h5>
+<ul>
+<li>吞吐量：指系统在<strong>单位时间内</strong>处理请求的数量。主要与主存的<font color='green'>存取周期相关</font>。</li>
+<li>响应时间：指从用户向计算机发送一个请求，到系统对该请求所作出的响应并获得所需结果的等待时间。
+<ul>
+<li>通常包括<font color='cornflowerblue'>CPU时间+等待时间</font>。</li>
+</ul>
+</li>
+</ul>
+<h5 id="cpu主频和时钟周期">②CPU主频和时钟周期</h5>
+<ul>
+<li><strong>CPU主频</strong>：CPU内数字脉冲信号振荡的频率
+<ul>
+<li><img class="img-zoomable" src="https://gitee.com/andrewyi99/blog_imgs/raw/master/20210419193726.png" alt="image-20210419193726693" />
+</li>
+<li>每一个波峰，代表一个数字信号。</li>
+<li>给CPU动作的执行带来一个“节奏”</li>
+</ul>
+</li>
+<li>CPU主频（时钟频率）= 1/CPU时钟周期（互为倒数关系）
+<ul>
+<li>单位：赫兹Hz</li>
+<li>10 Hz =&gt; 10个脉冲信号 /s</li>
+</ul>
+</li>
+<li><strong>CPU时钟周期</strong>：每一个脉冲信号的时间称为CPU的时钟周期。
+<ul>
+<li>单位：微秒、纳秒</li>
+</ul>
+</li>
+</ul>
+<h5 id="cpi">③CPI</h5>
+<ul>
+<li>
+<p>（Clock cycle Per Instruction）:执行一条指令所需要的时钟周期数</p>
+</li>
+<li>
+<p>不同的指令，CPI不同，甚至相同的指令，CPI也可能有变化。</p>
+</li>
+<li>
+<p>例题：</p>
+<ul>
+<li>某CPU主频为1000Hz,某程序包含100条指令，平均来看指令的CPI=3.</li>
+<li>该程序在该CPU上执行需要多久？
+<ul>
+<li>100 * 3 * 1/1000 = 0.3s</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="cpu执行时间">④CPU执行时间</h5>
+<ul>
+<li>CPU执行时间(整个程序的耗时) = CPU时钟周期数/主频=（指令条数*CPI）/主频</li>
+</ul>
+<h5 id="ipsinstructions-per-second">⑤IPS(Instructions Per Second)</h5>
+<ul>
+<li>
+<p>每秒执行多少条指令</p>
+</li>
+<li>
+<p>IPS= 主频/平均CPI（每秒钟可以执行多少条）</p>
+</li>
+<li>
+<p>KIPS、MIPS</p>
+</li>
+</ul>
+<h5 id="flopsfloating-point-operation-per-second">⑥FLOPS（Floating-point Operation Per Second）</h5>
+<ul>
+<li>
+<p>每秒钟执行多少次浮点运算。</p>
+</li>
+<li>
+<p>KFLOPS、MFLOPS、GFLOPS、TFLOPS</p>
+</li>
+<li>
+<p>此处的K、M、G、T为<font color='red'>数量单位</font></p>
+<ul>
+<li>K = kilo = 千= 10^3</li>
+<li>M=Million=百万 = 10^5</li>
+<li>G = Giga = 十亿 = 10^9</li>
+<li>T=Tera = 万亿 = 10^12</li>
+</ul>
+</li>
+</ul>
+<h4 id="5基准程序">(5).基准程序</h4>
+<ul>
+<li>
+<p>Benchmarks:专门用于进行性能评价的一组程序</p>
+<ul>
+<li>优点：可以在不同的机器上运行相同的基准程序来比较在不同的机器上运行的时间，从而评测其性能。</li>
+<li>缺点：基准程序的性能与某一小段的短代码密切相关，若优化它们后，以至于不能得到准确的性能评测结果。</li>
+</ul>
+</li>
+</ul>
+<h4 id="6问题">(6).问题</h4>
+<ul>
+<li>主频高的CPU一定比主频低的CPU快吗?</li>
+<li>答：
+<ul>
+<li>不一定，如两个CPU，A的主频为2GHz,平均CPI=10</li>
+<li>B的主频为1GHz,平均CPI=1</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>除特殊注明部分，本站内容采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a> 进行许可。</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>页面</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>链接</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/dsrkafuu" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://space.bilibili.com/19767474" target="_blank"><span>bilibili</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>标签</h3>
+        <div>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-计算机系统的组成">2.1 计算机系统的组成</a>
+      <ul>
+        <li><a href="#1主存储器的结构">1.主存储器的结构</a></li>
+        <li><a href="#2运算器的结构">2.运算器的结构</a></li>
+        <li><a href="#3-控制器的结构">3. 控制器的结构</a></li>
+      </ul>
+    </li>
+    <li><a href="#22计算机的指令工作过程">2.2计算机的指令工作过程</a></li>
+    <li><a href="#23-计算机系统层次">2.3 计算机系统层次</a></li>
+    <li><a href="#24-存储器的性能指标">2.4 存储器的性能指标</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>页面</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>链接</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/dsrkafuu" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://space.bilibili.com/19767474" target="_blank"><span>bilibili</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>标签</h3>
+        <div>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-计算机系统的组成">2.1 计算机系统的组成</a>
+      <ul>
+        <li><a href="#1主存储器的结构">1.主存储器的结构</a></li>
+        <li><a href="#2运算器的结构">2.运算器的结构</a></li>
+        <li><a href="#3-控制器的结构">3. 控制器的结构</a></li>
+      </ul>
+    </li>
+    <li><a href="#22计算机的指令工作过程">2.2计算机的指令工作过程</a></li>
+    <li><a href="#23-计算机系统层次">2.3 计算机系统层次</a></li>
+    <li><a href="#24-存储器的性能指标">2.4 存储器的性能指标</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2021
+                <a href="https://andrewyi99.github.io/">AndrewYi</a>
+                 | <a href="https://github.com/itsme/my_blog">Source code</a> 
+                | 基于 <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 构建
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.0/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>
